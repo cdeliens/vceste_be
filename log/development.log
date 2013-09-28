@@ -13978,3 +13978,49 @@ Processing by TagsController#index as JSON
   Parameters: {"callback"=>"angular.callbacks._2"}
   [1m[36mTag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` [0m
 Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (94.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (37.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+  [1m[35m (11.7ms)[0m  CREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `parent_id` int(11), `title` varchar(255), `body` varchar(255), `category_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130613040144')[0m
+Migrating to CreateCategories (20130618033912)
+  [1m[35m (16.0ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130618033912')[0m
+Migrating to RemoveParentIdFromPages (20130618034237)
+  [1m[35m (24.6ms)[0m  ALTER TABLE `pages` DROP `parent_id`
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130618034237')[0m
+Migrating to ChangeBodyFromPages (20130619011905)
+  [1m[35m (20.6ms)[0m  ALTER TABLE `pages` DROP `body`
+  [1m[36m (20.9ms)[0m  [1mALTER TABLE `pages` ADD `body` text[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130619011905')
+Migrating to CreateTwitterServices (20130707003515)
+  [1m[36m (10.8ms)[0m  [1mCREATE TABLE `twitter_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130707003515')
+Migrating to CreateInstagramServices (20130708190900)
+  [1m[36m (16.5ms)[0m  [1mCREATE TABLE `instagram_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130708190900')
+Migrating to CreateScreams (20130709204249)
+  [1m[36m (13.4ms)[0m  [1mCREATE TABLE `screams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` varchar(255), `owner` varchar(255), `media_url` varchar(255), `provider` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130709204249')
+Migrating to AddTagToScream (20130709221543)
+  [1m[36m (19.0ms)[0m  [1mALTER TABLE `screams` ADD `tag` varchar(255)[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130709221543')
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+  [1m[36m (16.1ms)[0m  [1mALTER TABLE `screams` ADD `owner_media_url` varchar(255)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130709221931')
+Migrating to CreatePosts (20130805000650)
+  [1m[36m (13.0ms)[0m  [1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `category_id` int(11), `body` varchar(255), `order` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130805000650')
+Migrating to AddHumanizeDateToPost (20130814041434)
+  [1m[36m (15.1ms)[0m  [1mALTER TABLE `posts` ADD `humanize_date` varchar(255)[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130814041434')
+Migrating to ChangeBodyFromPosts (20130816044514)
+  [1m[36m (16.2ms)[0m  [1mALTER TABLE `posts` DROP `body`[0m
+  [1m[35m (19.7ms)[0m  ALTER TABLE `posts` ADD `body` text
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130816044514')[0m
+Migrating to CreateTags (20130907235006)
+  [1m[35m (12.8ms)[0m  CREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130907235006')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 

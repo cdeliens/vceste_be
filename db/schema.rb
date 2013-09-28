@@ -27,12 +27,9 @@ ActiveRecord::Schema.define(:version => 20130907235006) do
   create_table "pages", :force => true do |t|
     t.string   "title"
     t.integer  "category_id"
-    t.datetime "created_at",              :null => false
-    t.datetime "updated_at",              :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.text     "body"
-    t.boolean  "published"
-    t.datetime "published_date"
-    t.string   "published_date_humanize"
   end
 
   create_table "posts", :force => true do |t|
