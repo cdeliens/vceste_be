@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @cms_place.name
+%p
+  %b Address:
+  = @cms_place.address
+
+= link_to 'Edit', edit_cms_place_path(@cms_place)
+\|
+= link_to 'Back', cms_places_path

@@ -1,0 +1,21 @@
+%h1 Listing cms_places
+
+%table
+  %tr
+    %th Name
+    %th Address
+    %th
+    %th
+    %th
+
+  - @cms_places.each do |cms_place|
+    %tr
+      %td= cms_place.name
+      %td= cms_place.address
+      %td= link_to 'Show', cms_place
+      %td= link_to 'Edit', edit_cms_place_path(cms_place)
+      %td= link_to 'Destroy', cms_place, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Place', new_cms_place_path

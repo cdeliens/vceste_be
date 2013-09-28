@@ -20,6 +20,10 @@ end
 group :development do
   gem "pry"
   gem "pry-remote"
+  gem 'guard-livereload'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
+  gem 'guard-coffeescript'
   
 end
 
@@ -38,4 +42,5 @@ group :test do
   gem "rspec-rails", "= 2.9"
   gem "factory_girl_rails"
   gem 'faker'
+  gem 'shoulda-matchers'
 end

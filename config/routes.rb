@@ -1,14 +1,10 @@
 CvBe::Application.routes.draw do
-  
+  resources :events
   resources :tags
-
-
   resources :screams
   resources :instagram_services
   resources :twitter_services
-
-
-  root to: "cms/pages#index"
+  root to: "cms/events#index"
   resources :pages do
     collection do
       get :find_by_category
@@ -27,5 +23,7 @@ CvBe::Application.routes.draw do
     resources :tags
     resources :screams    
     resources :categories
+    resources :events
+    resources :places
   end
 end

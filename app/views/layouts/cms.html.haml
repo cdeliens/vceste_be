@@ -2,7 +2,7 @@
 %html
   %head
     %title
-      Deliens
+      25este.com Admin
     = stylesheet_link_tag  "cms"
     = javascript_include_tag "cms"
     = csrf_meta_tags
@@ -11,7 +11,7 @@
     .navbar.navbar-inverse.navbar-fixed-top
       .navbar-inner
         .container-fluid
-          = link_to "Deliens", cms_root_path, class: "brand"
+          = link_to "25este Admin", cms_root_path, class: "brand"
           .navbar-content
             %ul.nav
               %li#dashboard.current
@@ -25,7 +25,10 @@
                     %a{:href => cms_categories_path} Categories        
                   %li
                     %a{:href => cms_posts_path} Posts
-                  %li              
+                  %li
+                    %a{:href => cms_screams_path} Screams
+                  %li
+                    %a{:href => cms_tags_path} Tags
     .main_container
 
       .container-fluid

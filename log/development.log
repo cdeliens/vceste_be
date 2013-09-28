@@ -14024,3 +14024,562 @@ Migrating to CreateTags (20130907235006)
   [1m[35m (12.8ms)[0m  CREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
   [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130907235006')[0m
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  Rendered cms/shared/_index.html.haml (6.4ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (14.8ms)
+Compiled jquery.js  (2ms)  (pid 51982)
+Compiled jquery_ujs.js  (0ms)  (pid 51982)
+Compiled cms.js  (51ms)  (pid 51982)
+Completed 200 OK in 198ms (Views: 142.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /cms.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /cms_behavior.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /bootstrap.min.js - 200 OK (26ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /select2.min.js - 200 OK (2ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /redactor.js - 200 OK (1ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /cms.js - 200 OK (6ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /glyphicons-halflings-white.png - 200 OK (1ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 200 OK (1ms)
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-09-27 21:40:17 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 200 OK (1ms)
+
+
+Started GET "/cms" for 127.0.0.1 at 2013-09-27 21:40:21 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` 
+  Rendered cms/shared/_index.html.haml (0.9ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (2.0ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cms/categories" for 127.0.0.1 at 2013-09-27 21:40:24 -0600
+Processing by Cms::CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` [0m
+  Rendered cms/shared/_index.html.haml (0.9ms)
+  Rendered cms/categories/index.html.haml within layouts/cms (2.7ms)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/cms/posts" for 127.0.0.1 at 2013-09-27 21:40:26 -0600
+Processing by Cms::PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered cms/shared/_index.html.haml (1.2ms)
+  Rendered cms/posts/index.html.haml within layouts/cms (3.0ms)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/cms/pages" for 127.0.0.1 at 2013-09-27 21:40:28 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` [0m
+  Rendered cms/shared/_index.html.haml (1.0ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (2.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cms/pages" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Processing by Cms::PagesController#index as HTML
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` 
+  Rendered cms/shared/_index.html.haml (1.0ms)
+  Rendered cms/pages/index.html.haml within layouts/cms (2.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /cms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:18 -0600
+Served asset /cms.js - 304 Not Modified (0ms)
+
+
+Started GET "/cms/screams" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Processing by Cms::ScreamsController#index as HTML
+  [1m[36mScream Load (0.5ms)[0m  [1mSELECT `screams`.* FROM `screams` [0m
+  Rendered cms/shared/_index.html.haml (1.2ms)
+  Rendered cms/screams/index.html.haml within layouts/cms (3.3ms)
+Completed 200 OK in 22ms (Views: 15.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /cms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:24 -0600
+Served asset /cms.js - 304 Not Modified (0ms)
+
+
+Started GET "/cms/tags" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Processing by Cms::TagsController#index as HTML
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` 
+  Rendered cms/shared/_index.html.haml (1.1ms)
+  Rendered cms/tags/index.html.haml within layouts/cms (2.9ms)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /cms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:44:25 -0600
+Served asset /cms.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/cms/tags" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Processing by Cms::TagsController#index as HTML
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT `tags`.* FROM `tags` [0m
+  Rendered cms/shared/_index.html.haml (1.3ms)
+  Rendered cms/tags/index.html.haml within layouts/cms (2.6ms)
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /cms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /cms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-09-27 21:55:05 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 21:55:10 -0600
+Processing by Cms::EventsController#index as HTML
+Mysql2::Error: Table 'db/development.25este_cv.events' doesn't exist: SHOW FULL FIELDS FROM `events`
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'db/development.25este_cv.events' doesn't exist: SHOW FULL FIELDS FROM `events`):
+  app/controllers/cms/base_controller.rb:40:in `attributes_types_from'
+  app/controllers/cms/base_controller.rb:55:in `default_attributes'
+
+
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (25.7ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.2ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+  [1m[35m (64.1ms)[0m  CREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` datetime, `place_id` int(11), `cover` int(11), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130928034942')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Processing by Cms::EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT `events`.* FROM `events` 
+  Rendered cms/shared/_index.html.haml (0.8ms)
+  Rendered cms/events/index.html.haml within layouts/cms (2.7ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /cms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /select2.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-27 21:55:27 -0600
+Served asset /cms.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+  [1m[35m (20.7ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130928035705')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (5.5ms)[0m  DROP DATABASE IF EXISTS `db/test.25este_cv`
+  [1m[36m (0.3ms)[0m  [1mCREATE DATABASE `db/test.25este_cv` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (17.8ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (19.0ms)[0m  [1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` datetime, `place_id` int(11), `cover` int(11), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (15.6ms)[0m  CREATE TABLE `instagram_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (15.2ms)[0m  [1mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `category_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `body` text) ENGINE=InnoDB[0m
+  [1m[35m (15.0ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.8ms)[0m  [1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `category_id` int(11), `order` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `humanize_date` varchar(255), `body` text) ENGINE=InnoDB[0m
+  [1m[35m (16.6ms)[0m  CREATE TABLE `screams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` varchar(255), `owner` varchar(255), `media_url` varchar(255), `provider` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `tag` varchar(255), `owner_media_url` varchar(255)) ENGINE=InnoDB
+  [1m[36m (13.3ms)[0m  [1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (13.3ms)[0m  CREATE TABLE `twitter_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (23.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130928035705')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130613040144')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130618033912')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130618034237')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130619011905')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130707003515')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130708190900')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130709204249')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130709221543')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130709221931')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130805000650')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130814041434')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130816044514')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130907235006')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130928034942')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (2.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (2.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (2.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (3.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePages (20130613040144)
+Migrating to CreateCategories (20130618033912)
+Migrating to RemoveParentIdFromPages (20130618034237)
+Migrating to ChangeBodyFromPages (20130619011905)
+Migrating to CreateTwitterServices (20130707003515)
+Migrating to CreateInstagramServices (20130708190900)
+Migrating to CreateScreams (20130709204249)
+Migrating to AddTagToScream (20130709221543)
+Migrating to AddOwnerMediaUrlToScream (20130709221931)
+Migrating to CreatePosts (20130805000650)
+Migrating to AddHumanizeDateToPost (20130814041434)
+Migrating to ChangeBodyFromPosts (20130816044514)
+Migrating to CreateTags (20130907235006)
+Migrating to CreateEvents (20130928034942)
+Migrating to CreatePlaces (20130928035705)
+Migrating to AddTaggeableToTag (20130928050419)
+  [1m[35m (53.5ms)[0m  ALTER TABLE `tags` ADD `taggeable_id` int(11)
+  [1m[36m (40.5ms)[0m  [1mALTER TABLE `tags` ADD `taggeable_type` varchar(255)[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20130928050419')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (15.2ms)[0m  DROP DATABASE IF EXISTS `db/test.25este_cv`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `db/test.25este_cv` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (22.5ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (21.4ms)[0m  [1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `date` datetime, `place_id` int(11), `cover` int(11), `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (15.7ms)[0m  CREATE TABLE `instagram_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (13.3ms)[0m  [1mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `category_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `body` text) ENGINE=InnoDB[0m
+  [1m[35m (16.3ms)[0m  CREATE TABLE `places` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (14.7ms)[0m  [1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `category_id` int(11), `order` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `humanize_date` varchar(255), `body` text) ENGINE=InnoDB[0m
+  [1m[35m (13.2ms)[0m  CREATE TABLE `screams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` varchar(255), `owner` varchar(255), `media_url` varchar(255), `provider` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `tag` varchar(255), `owner_media_url` varchar(255)) ENGINE=InnoDB
+  [1m[36m (11.3ms)[0m  [1mCREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `taggeable_id` int(11), `taggeable_type` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (11.5ms)[0m  CREATE TABLE `twitter_services` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (10.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (11.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130928050419')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130613040144')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130618033912')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130618034237')[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130619011905')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130707003515')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130708190900')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130709204249')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130709221543')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130709221931')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130805000650')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130814041434')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130816044514')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130907235006')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130928034942')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130928035705')[0m
+Connecting to database specified by database.yml
