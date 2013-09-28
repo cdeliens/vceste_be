@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %title
+      Deliens
+    = stylesheet_link_tag  "cms"
+    = javascript_include_tag "cms"
+    = csrf_meta_tags
+
+  %body#nf_bootstrap
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          = link_to "Deliens", cms_root_path, class: "brand"
+          .navbar-content
+            %ul.nav
+              %li#dashboard.current
+                %a{:href => "/cms"} Dashboard
+              %li#admin.dropdown
+                %a{:href => "#", class: "dropdown-toggle", :'data-toggle' => "dropdown"} Admin
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => cms_pages_path} Pages
+                  %li
+                    %a{:href => cms_categories_path} Categories        
+                  %li
+                    %a{:href => cms_posts_path} Posts
+                  %li              
+    .main_container
+
+      .container-fluid
+        = yield :breadcrumbs
+
+        - if flash[:notice]
+          .alert.alert-success= flash[:notice] 
+        - if flash[:error]
+          .alert.alert-error= flash[:error] 
+        = yield
+

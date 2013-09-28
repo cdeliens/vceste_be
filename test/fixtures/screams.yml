@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  body: MyString
+  owner: MyString
+  media_url: MyString
+  provider: MyString
+
+two:
+  body: MyString
+  owner: MyString
+  media_url: MyString
+  provider: MyString

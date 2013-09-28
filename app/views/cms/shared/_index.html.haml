@@ -1,0 +1,17 @@
+%div
+  %table.table.index_table.table-striped
+    %thead
+      = index_table_head @model
+    %tbody
+      - collection.each do |i|
+        %tr
+          - @model.attribute_names[0..4].each do |attr|
+            %td
+              = print_attribute i, attr.html_safe
+              
+             
+          %td.actions
+            %a.btn.btn-primary.btn-small{:href => send("edit_cms_#{@instance_name}_path", i)} Edit
+            = link_to "Remove", send("cms_#{@instance_name}_path", i), :confirm => "Are you sure you want to remove this #{@model.name.humanize}?", :method => 'delete', class: "btn btn-danger btn-small"
+
+  / # =paginate collection

@@ -1,0 +1,11 @@
+= semantic_form_for [:cms, model_instance] do |f|
+  #locale_tabs.tabbable
+    %ul.nav.nav-tabs
+      %li.active= link_to "General", "#general", 'data-toggle' => "tab"
+    .tab-content
+      #general.tab-pane.active
+        =f.inputs "Info" do
+          .control-group
+            = simple_form_builder f, attributes_hash
+
+      = f.button "#{params[:action].capitalize} #{@instance_name.humanize}", :class => 'btn btn-primary'

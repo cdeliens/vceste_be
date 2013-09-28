@@ -1,0 +1,4 @@
+= render "cms/shared/breadcrumb", model: @model, action: controller.action_name.capitalize
+
+%div
+  = render "cms/shared/form", model_instance: resource, attributes_hash: @attributes_hash
