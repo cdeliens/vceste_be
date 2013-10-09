@@ -27,6 +27,7 @@ group :development do
   
 end
 
+gem "httparty"
 gem "koala", "~> 1.7.0rc1"
 gem 'instagram'
 gem 'twitter'

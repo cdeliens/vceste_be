@@ -14583,3 +14583,298 @@ Connecting to database specified by database.yml
   [1m[35m (0.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20130928034942')
   [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20130928035705')[0m
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Processing by Cms::EventsController#index as HTML
+  [1m[36mEvent Load (2.9ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+  Rendered cms/shared/_index.html.haml (8.3ms)
+  Rendered cms/events/index.html.haml within layouts/cms (36.8ms)
+Completed 200 OK in 212ms (Views: 123.3ms | ActiveRecord: 42.4ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /cms.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /select2.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /redactor.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Compiled cms_behavior.js  (0ms)  (pid 22991)
+Served asset /cms_behavior.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /cms.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-09-30 00:07:31 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-09-30 00:07:32 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (2ms)
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-09-30 00:07:32 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-01 21:43:27 -0600
+Processing by Cms::EventsController#index as HTML
+  [1m[35mEvent Load (46.9ms)[0m  SELECT `events`.* FROM `events` 
+  Rendered cms/shared/_index.html.haml (111.1ms)
+  Rendered cms/events/index.html.haml within layouts/cms (159.6ms)
+Completed 200 OK in 360ms (Views: 234.8ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /cms.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /select2.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /redactor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /cms_behavior.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /cms.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (3ms)
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-10-01 21:43:28 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'db/development.25este_cv.vcestes' doesn't exist: SHOW FULL FIELDS FROM `vcestes`
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Processing by Cms::EventsController#index as HTML
+  [1m[36mEvent Load (1.8ms)[0m  [1mSELECT `events`.* FROM `events` [0m
+  Rendered cms/shared/_index.html.haml (6.9ms)
+  Rendered cms/events/index.html.haml within layouts/cms (34.8ms)
+Completed 200 OK in 149ms (Views: 107.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/cms.css?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /cms.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/select2.min.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /select2.min.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/redactor.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /redactor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cms_behavior.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /cms_behavior.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cms.js?body=1" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /cms.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/embarcaderomvb-reg-webfont.woff" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /embarcaderomvb-reg-webfont.woff - 304 Not Modified (2ms)
+
+
+Started GET "/assets/embarcaderomvb-bold-webfont.woff" for 127.0.0.1 at 2013-10-03 22:36:25 -0600
+Served asset /embarcaderomvb-bold-webfont.woff - 304 Not Modified (2ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:37:08 -0600
+
+SyntaxError (/Users/cdeliens/development/25este_be/app/controllers/events_controller.rb:3: syntax error, unexpected ':', expecting '}'
+    @results = Vceste.get_category_posts {slug: :evento}
+                                               ^):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__798498132734293788__call__1939797107203739509__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:40:07 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 4672ms (Views: 0.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:53:07 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 4105ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:53:37 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 3805ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:57:43 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 4437ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:59:11 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 4810ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-03 22:59:21 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 3792ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-04 10:50:07 -0600
+Processing by EventsController#index as JSON
+Completed 200 OK in 14304ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json" for 127.0.0.1 at 2013-10-04 14:29:39 -0600
+Processing by EventsController#index as JSON
+Completed 500 Internal Server Error in 60ms
+
+SocketError (getaddrinfo: nodename nor servname provided, or not known):
+  app/models/vceste.rb:7:in `get_category_posts'
+  app/controllers/events_controller.rb:3:in `index'
+
+
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /Users/cdeliens/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)

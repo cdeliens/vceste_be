@@ -95,6 +95,9 @@ GEM
     hashie (2.0.5)
     hike (1.2.3)
     http_parser.rb (0.5.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.1)
     inherited_resources (1.4.0)
       has_scope (~> 0.5.0)
@@ -127,6 +130,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.25)
     multi_json (1.8.0)
+    multi_xml (0.5.3)
     multipart-post (1.2.0)
     mysql2 (0.3.13)
     pg (0.17.0)
@@ -229,6 +233,7 @@ DEPENDENCIES
   guard-rspec
   haml-rails
   has_scope
+  httparty
   inherited_resources
   instagram
   jquery-rails

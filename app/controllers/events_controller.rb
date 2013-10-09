@@ -1,6 +1,6 @@
 class EventsController < InheritedResources::Base
   def index
-    @results = Event.all()
+    @results = Vceste.get_category_posts({slug: :evento})
     respond_to do |format|
       if params[:callback]
         format.json { render :json => @results.to_json(include: :place), :callback => params[:callback] }
