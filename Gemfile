@@ -38,7 +38,7 @@ gem 'inherited_resources'
 gem 'kaminari'
 gem 'formtastic', '~> 2.0.0'
 gem 'has_scope'
-gem 'bootstrap-sass', :git => "https://cdeliens:45del29cdn@github.com/newfuturodev/bootstrap-sass.git", :branch => "latest"
+
 
 group :test do
   gem "rspec-rails", "= 2.9"
